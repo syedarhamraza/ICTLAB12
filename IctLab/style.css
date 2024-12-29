@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", serif;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(80, 9, 121, 1) 0%,
+    rgba(106, 0, 255, 1) 100%
+  );
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1 {
+  text-align: center;
+  text-shadow: 2px 2px 5px #313131;
+}
+
+.container {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+.container_two {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin: 50px;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 20px;
+  gap: 20px;
+}
+
+h2 {
+  text-decoration: underline;
+  font-weight: bold;
+  color: rgb(117, 36, 193);
+}
+
+label {
+  font-weight: bold;
+  color: black;
+}
+
+input[type="text"] {
+  border: 1px black solid;
+  border-radius: 50px;
+  padding: 8px;
+  outline-color: #8d00ff;
+}
+input[type="email"] {
+  border: 1px black solid;
+  border-radius: 50px;
+  padding: 8px;
+  outline-color: #8d00ff;
+}
+input[type="date"] {
+  border: 1px black solid;
+  border-radius: 50px;
+  padding: 8px;
+  outline-color: #8d00ff;
+}
+input[type="color"] {
+  padding: 2.5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+input[type="file"] {
+  border: 1px black solid;
+  border-radius: 50px;
+  padding: 8px;
+  display: block;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(80, 9, 121, 1) 0%,
+    rgba(106, 0, 255, 1) 100%
+  );
+  color: white;
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  translate: 0px 2px;
+  transition: all ease 0.2s;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px #8d00ff solid;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #8d00ff;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f4e8ff;
+}
+tr:nth-child(odd) {
+  background-color: #faf4ff;
+}
+
+a {
+  color: #8d00ff;
+  text-shadow: 1px 1px 10px rgba(141, 0, 255, 0.7);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  text-shadow: 0.3s ease;
+}
+
+a:hover {
+  color: #d60000;
+  text-shadow: 2px 2px 15px rgba(214, 0, 0, 0.8);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container,
+  .container_two {
+    width: 100%;
+  }
+}
